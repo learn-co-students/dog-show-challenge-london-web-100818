@@ -5,10 +5,9 @@ const formBreed = document.querySelector('input[name="breed"]')
 const formSex = document.querySelector('input[name="sex"]')
 const formId = document.querySelector('input[name="id"]')
 
-
-
-
 const renderDogs = (dogs) => {
+    table.innerHTML = ''
+
     dogs.forEach(dog => renderDog(dog))
 }
 
@@ -46,7 +45,6 @@ const clickAndEditDog = (el, dog) => {
             id: formId.value
         
         }
-        table.innerHTML = ''
 
         patchDog(dog)
             .then(() => 
