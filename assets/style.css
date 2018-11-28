@@ -47,3 +47,12 @@ th {
   border-width: 1px;
   border-color: grey;
 }
+
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+}
